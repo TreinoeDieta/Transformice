@@ -1,12 +1,6 @@
-// Using CommonJS
-var Chart = require('chart.js')
-var myChart = new Chart({...})
-
-// ES6
-import Chart from 'chart.js'
-let myChart = new Chart({...})
-
-// Using requirejs
-require(['path/to/Chartjs'], function(Chart){
- var myChart = new Chart({...})
-})
+<canvas id="myChart" width="400" height="400"></canvas>
+// Any of the following formats may be used
+var ctx = document.getElementById("myChart");
+var ctx = document.getElementById("myChart").getContext("2d");
+var ctx = $("#myChart");
+var ctx = "myChart";
